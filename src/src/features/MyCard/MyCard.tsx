@@ -1,4 +1,5 @@
 import React from 'react';
+import { CARD } from '../../app/constants';
 import s from './MyCard.module.scss';
 
 interface IMyCardProps {
@@ -24,8 +25,12 @@ function MyCard({ cards }: IMyCardProps) {
       <div className={s.imgcontainer}>
         <img className={s.img} src={cards.image} alt="cardimge" />
       </div>
-      <p>{cards.title}</p>
-      <p>{cards.id}</p>
+      <div className={s.textcontainer}>
+        <div className={s.price}>{cards.price}</div>
+        <div>{cards.title.length > CARD.textlen ? `${cards.title.slice(0, CARD.textlen - 3)}...` : cards.title}</div>
+
+      </div>
+
     </div>
   );
 }

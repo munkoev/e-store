@@ -3,9 +3,12 @@ import s from './MyHeader.module.scss';
 
 function MyHeader() {
   return (
-    <div className={s.MyHeader}>
-      MyHeader
+    <div className={s.wrapper}>
+      <div className={s.MyHeader}>
+        MyHeader
+      </div>
     </div>
+
   );
 }
 

@@ -3,8 +3,10 @@ import s from './MyFooter.module.scss';
 
 function MyFooter() {
   return (
-    <div className={s.MyFooter}>
-      MyFooter
+    <div className={s.wrapper}>
+      <div className={s.MyFooter}>
+        MyFooter
+      </div>
     </div>
   );
 }

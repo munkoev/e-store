@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import MyFooter from './features/MyFooter/MyFooter';
 import MyHeader from './features/MyHeader/MyHeader';
@@ -8,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <MyHeader />
-      <MyMain />
+      <Routes>
+        <Route path="/" element={<MyMain />} />
+      </Routes>
       <MyFooter />
     </div>
   );

@@ -1,5 +1,14 @@
-.MyFooter {
+.wrapper {
+    width: 100%;
     background-color: #1d3557;
     color: #f1faee;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .MyFooter {
+
+        width: 100%;
+        max-width: 1600px;
+        padding: 25px 10px;
+    }
 }

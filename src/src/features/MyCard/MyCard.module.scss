@@ -1,11 +1,16 @@
 .MyCard {
-    width: 150px;
+    width: 200px;
     max-height: 350px;
-    border: 1px solid red;
-    border-radius: 3px;
-    margin: 5px;
+    border: 0px solid red;
+    border-radius: 35px;
+    margin: 25px;
     padding: 5px;
+    background-color: white;
 
+    &:hover {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.135);
+        cursor: pointer;
+    }
     .imgcontainer {
         width: 100%;
         height: 150px;
@@ -14,6 +19,16 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+
+    }
+
+    .textcontainer {
+        padding: 25px;
+
+        .price {
+            font-size: larger;
+            font-weight: bolder;
         }
     }
 
