@@ -1,11 +1,15 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import MyFooter from './features/MyFooter/MyFooter';
+import MyHeader from './features/MyHeader/MyHeader';
+import MyMain from './features/MyMain/MyMain';
 
 function App() {
   return (
     <div className="App">
-      asd
+      <MyHeader />
+      <MyMain />
+      <MyFooter />
     </div>
   );
 }

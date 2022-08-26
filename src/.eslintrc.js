@@ -19,5 +19,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/no-unused-prop-types": 0
     }
 }

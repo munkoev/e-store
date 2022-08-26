@@ -1,0 +1,14 @@
+.MyMain {
+    background-color: #f1faee;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}

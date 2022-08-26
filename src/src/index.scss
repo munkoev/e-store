@@ -1,0 +1,11 @@
+body {
+    background: linear-gradient(#f1faee35, #f1faee) no-repeat;
+    margin: 0;
+
+    #root {
+        margin: 0 auto;
+        display: flex;
+        box-sizing: border-box;
+        max-width: 1600px;
+    }
+}
