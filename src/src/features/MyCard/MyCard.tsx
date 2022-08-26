@@ -1,5 +1,6 @@
 import React from 'react';
-import { CARD } from '../../app/constants';
+import { useTranslation } from 'react-i18next';
+// import { CARD } from '../../app/constants';
 import s from './MyCard.module.scss';
 
 interface IMyCardProps {
@@ -20,6 +21,8 @@ export interface IMyCard {
 }
 
 function MyCard({ cards }: IMyCardProps) {
+  const { t, i18n } = useTranslation();
+  // i18n.language
   return (
     <div className={s.MyCard}>
       <div className={s.imgcontainer}>
@@ -27,8 +30,8 @@ function MyCard({ cards }: IMyCardProps) {
       </div>
       <div className={s.textcontainer}>
         <div className={s.price}>{cards.price}</div>
-        <div>{cards.title.length > CARD.textlen ? `${cards.title.slice(0, CARD.textlen - 3)}...` : cards.title}</div>
-
+        <div>{t(cards.description)}</div>
+        <button type="button" onClick={() => i18n.changeLanguage('fr')}>translate</button>
       </div>
 
     </div>

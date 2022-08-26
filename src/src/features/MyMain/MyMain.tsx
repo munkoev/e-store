@@ -5,6 +5,7 @@ import s from './MyMain.module.scss';
 
 function MyMain() {
   const { cards } = useMyMainHook();
+
   return (
     <div className={s.MyMain}>
       <div className={s.container}>
